@@ -1,30 +1,6 @@
 {
     "eleccity": [
         {
-            "registerer": "978910234166820864",
-            "licensecode": "PVAI0-1452V-JFOSD-7AETB-4QMON",
-            "gameid": 123,
-            "discordlink": "123"
-        },
-        {
-            "registerer": "978910234166820864",
-            "licensecode": "4J066-8BL8W-PG8MF-FI3V4-47BDW",
-            "gameid": 1234,
-            "discordlink": "1234"
-        },
-        {
-            "registerer": "978910234166820864",
-            "licensecode": "R58MI-MILH1-EQ3GK-TMGEP-SK8GQ",
-            "gameid": 1234,
-            "discordlink": "1234"
-        },
-        {
-            "registerer": "978910234166820864",
-            "licensecode": "JTKBO-9FYG5-TA8RW-C4P9I-UEWUH",
-            "gameid": 123123123123,
-            "discordlink": "XebSEgMY"
-        },
-        {
             "product": "Eleccity",
             "registerer": "978910234166820864",
             "licensecode": "MLMH8-4V1J3-5SLLE-7PET8-9U1TW",
@@ -32,5 +8,9 @@
             "discordlink": "8nXFkkZrG2",
             "licensed": false
         }
+    ],
+
+    "BusLedCTRLV2": [
+        
     ]
 }

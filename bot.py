@@ -352,10 +352,11 @@ async def db갱신(
 async def db강제갱신(
     interaction: disnake.ApplicationCommandInteraction    
 ):
+    await interaction.response.defer()
     result = UpdateConfigWithForce(folderpath=fdpath, commitmsg="DB갱신")
 
     if result:
-        await interaction.response.send_message(
+        await interaction.edit_original_response(
             embed=disnake.Embed(
                 title="**<:CHECK:1141002471297253538> | 갱신 성공**",
                 description=(
@@ -365,7 +366,7 @@ async def db강제갱신(
             )
         )   
     else:
-        await interaction.response.send_message(
+        await interaction.edit_original_response(
             embed=disnake.Embed(
                 title="**<:X_:1141002622896185426> | 갱신 실패**",
                 description=(
