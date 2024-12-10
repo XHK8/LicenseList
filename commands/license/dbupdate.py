@@ -11,7 +11,7 @@ fdpath = os.getcwd()
 def UpdateConfigWithForce(folderpath, commitmsg):
     try:
         # git add 실행
-        subprocess.run(['git', '-C', folderpath, 'add', '.'], check=True)
+        subprocess.run(['git', '-C', folderpath, 'add', 'config.json'], check=True)
         
         # git commit 실행, 출력 캡처
         commit_result = subprocess.run(
