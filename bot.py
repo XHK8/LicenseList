@@ -14,7 +14,7 @@ fdpath = os.getcwd()
 
 def UpdateConfig(folderpath, commitmsg):
     try:
-        subprocess.run(['git', '-C', folderpath, 'add', 'config.json'], check=True)
+        subprocess.run(['git', '-C', folderpath ,'add', '.'], check=True)
         subprocess.run(['git', '-C', folderpath, 'commit', '-m', commitmsg], check=True)
         subprocess.run(['git', '-C', folderpath, 'push', '-u', 'origin', 'main'], check=True)
         return True
@@ -228,7 +228,8 @@ async def 정품해제(
                     rbgmlink = f"https://www.roblox.com/ko/games/{gameid}/"
 
                     data['licensed'] = False
-                    save_config(config)
+
+                    
                     await interaction.response.send_message(
                         embed=disnake.Embed(
                             title="**<:CHECK:1141002471297253538> | 정품인증 해제 성공**",
@@ -319,7 +320,7 @@ async def db갱신(
 ):
     result = UpdateConfig(folderpath=fdpath, commitmsg="DB갱신")
 
-    if result == True:
+    if result:
         await interaction.response.send_message(
             embed=disnake.Embed(
                 title="**<:CHECK:1141002471297253538> | 갱신 성공**",
@@ -329,7 +330,7 @@ async def db갱신(
                 color=0x59ff85
             )
         )   
-    elif result == False:
+    else:
         await interaction.response.send_message(
             embed=disnake.Embed(
                 title="**<:X_:1141002622896185426> | 갱신 실패**",
