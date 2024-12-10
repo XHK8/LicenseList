@@ -6,11 +6,17 @@
             "licensecode": "MLMH8-4V1J3-5SLLE-7PET8-9U1TW",
             "gameid": "10341831228",
             "discordlink": "8nXFkkZrG2",
-            "licensed": false
+            "licensed": true
         }
     ],
 
     "BusLedCTRLV2": [
 
+    ],
+
+    "NSACLow": [
+
     ]
+
+
 }
