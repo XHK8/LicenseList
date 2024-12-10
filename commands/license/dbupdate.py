@@ -43,6 +43,13 @@ def setup(bot):
     @bot.slash_command(name='db갱신', description='DB를 강제로 갱신합니다.')
     async def db갱신(interaction: disnake.ApplicationCommandInteraction):
         await interaction.response.defer()
+        await interaction.edit_original_response(
+            embed=disnake.Embed(
+                title="**<a:loading2:1162315784895352832> | DB상태 확인중**",
+                description=">>> DB 정보를 가져오고 있습니다. 잠시만 기다려주세요...\n\n(갱신이 필요하면 자동으로 갱신을 진행합니다.)",
+                color=0x00C2FF
+            )
+        )
         result = UpdateConfigWithForce(folderpath=fdpath, commitmsg="DB갱신")
         if result == "SUCCESS":
             embed = disnake.Embed(
