@@ -21,7 +21,14 @@ def UpdateConfig(folderpath, commitmsg):
     except subprocess.CalledProcessError as e:
         return False
 
-
+def UpdateConfigWithForce(folderpath, commitmsg):
+    try:
+        subprocess.run(['git', '-C', folderpath ,'add', '.'], check=True)
+        subprocess.run(['git', '-C', folderpath, 'commit', '-m', commitmsg], check=True)
+        subprocess.run(['git', '-C', folderpath, 'push', '-u', 'origin', 'main', '--force'], check=True)
+        return True
+    except subprocess.CalledProcessError as e:
+        return False
 
 
 def  load_config():
@@ -319,6 +326,33 @@ async def db갱신(
     interaction: disnake.ApplicationCommandInteraction    
 ):
     result = UpdateConfig(folderpath=fdpath, commitmsg="DB갱신")
+
+    if result:
+        await interaction.response.send_message(
+            embed=disnake.Embed(
+                title="**<:CHECK:1141002471297253538> | 갱신 성공**",
+                description=(
+                    f">>> 정품인증 DB 갱신에 성공하였습니다."
+                ),
+                color=0x59ff85
+            )
+        )   
+    else:
+        await interaction.response.send_message(
+            embed=disnake.Embed(
+                title="**<:X_:1141002622896185426> | 갱신 실패**",
+                description=(
+                    f">>> 정품인증 DB 갱신에 실패하였습니다."
+                ),
+                color=0xff4040
+            )
+        )
+
+@bot.slash_command(name='db강제갱신', description='DB를 강제로 갱신합니다.')
+async def db강제갱신(
+    interaction: disnake.ApplicationCommandInteraction    
+):
+    result = UpdateConfigWithForce(folderpath=fdpath, commitmsg="DB갱신")
 
     if result:
         await interaction.response.send_message(
