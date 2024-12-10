@@ -1,2 +1,0 @@
-XHK8/LicenseList
-git remote add origin git@github.com:XHK8/LicenseList.git
