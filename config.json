@@ -9,18 +9,12 @@
             "licensed": true
         }
     ],
-
-    "ElecCityTown": [
-        
-    ],
-
+    "ElecCityTown": [],
     "BusLedCTRLV2": [
-        {},{}
+        {},
+        {}
     ],
-
     "NSACLow2017": [
         {}
     ]
-
-
 }
