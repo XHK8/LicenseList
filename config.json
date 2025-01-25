@@ -23,6 +23,30 @@
             "gameid": "72828387573236",
             "discordlink": "q4DQxERe",
             "licensed": true
+        },
+        {
+            "product": "Eleccity",
+            "registerer": "978910234166820864",
+            "licensecode": "962UL-WM6A4-EBQ30-WT0MU-K30MZ",
+            "gameid": "72828387573236",
+            "discordlink": "pBNBUPff",
+            "licensed": false
+        },
+        {
+            "product": "일렉시티",
+            "registerer": "978910234166820864",
+            "licensecode": "LKSJZ-EJAQL-QOAQP-HRP1U-OBCZX",
+            "gameid": "72828387573236",
+            "discordlink": "xhk8",
+            "licensed": false
+        },
+        {
+            "product": "일렉시티",
+            "registerer": "978910234166820864",
+            "licensecode": "B682D-LNEEH-7FGVG-0MP31-ED84W",
+            "gameid": "72828387573236",
+            "discordlink": "xhk8",
+            "licensed": true
         }
     ],
     "ElecCityTown": [],
