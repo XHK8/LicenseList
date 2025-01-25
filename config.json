@@ -55,6 +55,22 @@
             "gameid": "17501956469",
             "discordlink": "NvUAsVnUtz",
             "licensed": true
+        },
+        {
+            "product": "일렉시티",
+            "registerer": "1019196364879560775",
+            "licensecode": "MIN3L-WOMCS-NIYHF-W7OKU-0I815",
+            "gameid": "93299640886052",
+            "discordlink": "pDNAYanN",
+            "licensed": false
+        },
+        {
+            "product": "Eleccity",
+            "registerer": "799413449855467551",
+            "licensecode": "PH7NI-TOX6C-8GWOU-UDICI-XSBCY",
+            "gameid": "136644608814951",
+            "discordlink": "EGQsvAcDP9",
+            "licensed": false
         }
     ],
     "ElecCityTown": [],
