@@ -62,7 +62,7 @@
             "licensecode": "MIN3L-WOMCS-NIYHF-W7OKU-0I815",
             "gameid": "93299640886052",
             "discordlink": "pDNAYanN",
-            "licensed": false
+            "licensed": true
         },
         {
             "product": "Eleccity",
@@ -70,7 +70,7 @@
             "licensecode": "PH7NI-TOX6C-8GWOU-UDICI-XSBCY",
             "gameid": "136644608814951",
             "discordlink": "EGQsvAcDP9",
-            "licensed": false
+            "licensed": true
         },
         {
             "product": "Eleccity",
@@ -86,6 +86,30 @@
             "licensecode": "AI7LG-DNDIT-90XAW-TDAP0-6PCVK",
             "gameid": "10341831228",
             "discordlink": "xhk8",
+            "licensed": false
+        },
+        {
+            "product": "일렉시티",
+            "registerer": "743635397648842773",
+            "licensecode": "0VPGR-P46JV-NQHF7-TCFQ5-UBTZM",
+            "gameid": "94805557241824",
+            "discordlink": "CQqxP3wSeP",
+            "licensed": false
+        },
+        {
+            "product": "일렉시티",
+            "registerer": "1097419197685973063",
+            "licensecode": "PHS0E-GYSAV-NM7M5-MTZEQ-527FU",
+            "gameid": "86072571254952",
+            "discordlink": "MBbpJSVyku",
+            "licensed": false
+        },
+        {
+            "product": "일렉시티",
+            "registerer": "1168092346806698017",
+            "licensecode": "PHS0E-GYSAV-NM7M5-MTZEQ-527FU",
+            "gameid": "86072571254952",
+            "discordlink": "MBbpJSVyku",
             "licensed": false
         }
     ],
